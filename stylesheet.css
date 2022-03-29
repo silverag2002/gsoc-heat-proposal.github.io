@@ -1,0 +1,291 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+
+  }
+body{
+  background-color: #152238
+}
+html{
+  font-family: 'Montserrat',sans-serif;
+
+}
+/* hr{
+  border: solid 1px #32a1ce;
+} */
+.page1-parent{
+  background-color: #152238;
+  display: block;
+
+  padding:10%;
+}
+section{
+  padding-bottom: 1px;
+}
+
+.page1{
+  height:70px;
+  width:300px;
+  /* background-color: gray; */
+display: flex;
+align-items: center;
+justify-content: center;;
+margin:10%;
+margin-bottom: 30%;
+border-radius: 10px;
+
+}
+
+.page1:nth-child(1){
+  color: #FBBC05;
+  border:solid 1px #F4B400;
+
+}
+.page1:nth-child(2){
+  color: aqua;
+  border:solid 1px aqua;
+
+}
+.page1:nth-child(3){
+  color: #34A853;
+  border:solid 1px #34A853;
+
+}
+.page2{
+  height:200px;
+  width:300px;
+  background-color: #152238;
+display: block;
+margin:20%;
+border-radius: 10px;
+padding-top: 25px;
+text-align: center;
+
+}
+.page2 p{
+  font-size: 1rem;
+}
+.page2:nth-child(4){
+
+  color: #ff9900;
+  border:solid 1px #ff9900;
+}
+.page2:nth-child(5){
+
+  color: #ff00ff;
+  border:solid 1px #ff00ff;
+}
+.page2:nth-child(6){
+
+  color: #9900ff;
+  border:solid 1px #9900ff;
+}
+.page1:nth-child(7){
+
+  color: #34A853;
+  border:solid 1px #34A853;
+
+}
+
+.page3{
+  height:70px;
+  width:300px;
+  background-color: #152238;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #ff9900;
+border:solid 1px #ff9900;
+border-radius: 10px;
+margin:0;
+
+}
+
+
+
+
+
+.container{
+min-height:100vh;
+width:100%;
+display:flex;
+align-items: center;
+justify-content: center;
+background-color: #152238;
+padding:100px 0;
+}
+
+.timeline{
+  width:80%;
+  height:100%;
+  max-width: 800px;
+  margin:0 auto;
+  position:relative;
+}
+.timeline ul{
+  list-style: none;
+}
+.timeline ul li{
+  padding:20px;
+  /* background-color: #1e1f22;
+  color:white; */
+  border-radius:10px;
+  margin-bottom: 20px;
+  /* border:solid 1px #32a1ce; */
+}
+.timeline-content h1{
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+timeline-content p{
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 30px;
+
+}
+p{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.timeline-content .date{
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+li:nth-child(1){
+  color:#4285F4;
+  border:solid 1px #4285F4;
+}
+li:nth-child(2){
+  color:aqua;
+  border:solid 1px aqua;
+}
+li:nth-child(3){
+  color:#E01E5A;
+  border:solid 1px #E01E5A;
+}
+li:nth-child(4){
+  color:#FD636B;
+  border:solid 1px #FD636B;
+}
+li:nth-child(5){
+  color:#F4B400;
+  border:solid 1px #F4B400;
+}
+li:nth-child(6){
+  color:#FFFF00;
+  border:solid 1px #FFFF00;
+}
+@media only screen and (min-width:768px){
+
+
+  .page1-parent{
+    background-color: #152238;
+    display: block;
+
+    padding:10%;
+    padding-top: 2%;
+
+  }
+  .page1{
+    height:22rem;
+    width:40rem;
+    background-color: #152238;
+  display: flex;
+  align-items: center;
+  justify-content: center;;
+  margin:20%;
+  border-radius: 10px;
+  font-size: 4rem;
+  }
+
+  .page2{
+    height:28rem;
+    width:50rem;
+    background-color: #152238;
+  display: inline-block;
+  margin:20%;
+  border-radius: 10px;
+  font-size: 3rem;
+  padding-top: 70px;
+  padding-left: 30px;
+  padding-right: 30px;
+  }
+  .page2 p{
+    font-size: 1.5rem;
+  }
+
+  .page3{
+    height:200px;
+    width:600px;
+    background-color: #152238;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff9900;
+  border:solid 1px #ff9900;
+  border-radius: 10px;
+  margin:0;
+  font-size: 3rem;
+  }
+
+
+
+  .timeline::before{
+    content:'';
+    position:absolute;
+    height:100%;
+    width:2px;
+    left:50%;
+    transform:translateX(-50%);
+    background-color: gray;
+  }
+  .timeline ul li{
+  width:50%;
+  margin-bootom:50px;
+  psition:relative;
+
+}
+.timeline ul li:nth-child(odd){
+  float :left;
+  clear:right;
+transform:translateX(-30px);
+}
+.timeline ul li:nth-child(even){
+  float :right;
+  clear:left;
+  transform:translateX(30px);
+
+}
+.timeline ul li::after{
+  content: '';
+  position: absolute;
+  height:20px;
+  width:20px;
+  border-radius: 50%;
+  background-color: gray;
+  top:0;
+}
+.timeline ul li:nth-child(odd)::after{
+  transform:translateX(50%,-50%);
+  right:-40px;
+
+}
+.timeline ul li:nth-child(even)::after{
+  transform:translateX(-50%,-50%);
+  left:-40px;
+
+}
+.timeline ul li:hover:after{
+  background-color: aqua;
+}
+.timeline-content .date{
+  position: absolute;
+
+  top:-30px;
+}
+}
